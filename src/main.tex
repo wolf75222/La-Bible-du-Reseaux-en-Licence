@@ -22,7 +22,8 @@
 \usepackage{adjustbox}
 \usepackage{tabularx}
 \usepackage{float}
-
+\usepackage{array}
+\usepackage{xcolor}
 
 \usepackage{fancyhdr}
 
@@ -120,6 +121,50 @@
 
 \subsection{Puissances de 2}
 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    Puissance de 2 & Décimal & Binaire & Hexadécimal \\
+    \hline
+    $2^0$  & 1        & 1                & 1 \\
+    \hline
+    $2^1$  & 2        & 10               & 2 \\
+    \hline
+    $2^2$  & 4        & 100              & 4 \\
+    \hline
+    $2^3$  & 8        & 1000             & 8 \\
+    \hline
+    $2^4$  & 16       & 10000            & 10 \\
+    \hline
+    $2^5$  & 32       & 100000           & 20 \\
+    \hline
+    $2^6$  & 64       & 1000000          & 40 \\
+    \hline
+    $2^7$  & 128      & 10000000         & 80 \\
+    \hline
+    $2^8$  & 256      & 100000000        & 100 \\
+    \hline
+    $2^9$  & 512      & 1000000000       & 200 \\
+    \hline
+    $2^{10}$ & 1024   & 10000000000      & 400 \\
+    \hline
+    $2^{11}$ & 2048   & 100000000000     & 800 \\
+    \hline
+    $2^{12}$ & 4096   & 1000000000000    & 1000 \\
+    \hline
+    $2^{13}$ & 8192   & 10000000000000   & 2000 \\
+    \hline
+    $2^{14}$ & 16384  & 100000000000000  & 4000 \\
+    \hline
+    $2^{15}$ & 32768  & 1000000000000000 & 8000 \\
+    \hline
+    $2^{16}$ & 65536  & 10000000000000000& 10000 \\
+    \hline
+    \end{tabular}
+    \caption{Puissances de 2 et leurs représentations en binaire et hexadécimal}
+    \label{tab:puissances_de_2}
+\end{table}
 
 \subsection{Conversions entre décimal et binaire}
 
@@ -128,17 +173,286 @@
 
 \subsection{Puissances de 16}
 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    Puissance de 16 & Décimal & Binaire & Hexadécimal \\
+    \hline
+    $16^0$  & 1          & 1                 & 1 \\
+    \hline
+    $16^1$  & 16         & 10000             & 10 \\
+    \hline
+    $16^2$  & 256        & 100000000         & 100 \\
+    \hline
+    $16^3$  & 4096       & 1000000000000     & 1000 \\
+    \hline
+    $16^4$  & 65536      & 10000000000000000 & 10000 \\
+    \hline
+    \end{tabular}
+    \caption{Puissances de 16 et leurs représentations en décimal, binaire et hexadécimal}
+    \label{tab:puissances_de_16}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \(n \times 16\) & Décimal & Binaire & Hexadécimal \\
+    \hline
+    \(1 \times 16\) & 16  & 10000            & 10 \\
+    \hline
+    \(2 \times 16\) & 32  & 100000           & 20 \\
+    \hline
+    \(3 \times 16\) & 48  & 110000           & 30 \\
+    \hline
+    \(4 \times 16\) & 64  & 1000000          & 40 \\
+    \hline
+    \(5 \times 16\) & 80  & 1010000          & 50 \\
+    \hline
+    \(6 \times 16\) & 96  & 1100000          & 60 \\
+    \hline
+    \(7 \times 16\) & 112 & 1110000          & 70 \\
+    \hline
+    \(8 \times 16\) & 128 & 10000000         & 80 \\
+    \hline
+    \(9 \times 16\) & 144 & 10010000         & 90 \\
+    \hline
+    \(10 \times 16\) & 160 & 10100000        & A0 \\
+    \hline
+    \(11 \times 16\) & 176 & 10110000        & B0 \\
+    \hline
+    \(12 \times 16\) & 192 & 11000000        & C0 \\
+    \hline
+    \(13 \times 16\) & 208 & 11010000        & D0 \\
+    \hline
+    \(14 \times 16\) & 224 & 11100000        & E0 \\
+    \hline
+    \(15 \times 16\) & 240 & 11110000        & F0 \\
+    \hline
+    \(16 \times 16\) & 256 & 100000000       & 100 \\
+    \hline
+    \end{tabular}
+    \caption{Table de multiplication par 16 en décimal, binaire et hexadécimal}
+    \label{tab:table_de_16_formats}
+\end{table}
+
 
 \subsection{Conversions entre décimal et héxadécimal}
 
 
 \subsection{Conversions entre binaire et héxadécimal}
 
+\section{Utiles en Réseau}
 
-\subsection{Binaire utile en réseau}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Décimal & Binaire & Hexadécimal \\
+    \hline
+    16  & 00010000 & 10 \\
+    \hline
+    32  & 00100000 & 20 \\
+    \hline
+    48  & 00110000 & 30 \\
+    \hline
+    49  & 00110001 & 31 \\
+    \hline
+    52  & 00110100 & 34 \\
+    \hline
+    64  & 01000000 & 40 \\
+    \hline
+    80  & 01010000 & 50 \\
+    \hline
+    96  & 01100000 & 60 \\
+    \hline
+    98  & 01100010 & 62 \\
+    \hline
+    125 & 01111101 & 7D \\
+    \hline
+    128 & 10000000 & 80 \\
+    \hline
+    162 & 10100010 & A2 \\
+    \hline
+    168 & 10101000 & A8 \\
+    \hline
+    192 & 11000000 & C0 \\
+    \hline
+    201 & 11001001 & C9 \\
+    \hline
+    224 & 11100000 & E0 \\
+    \hline
+    240 & 11110000 & F0 \\
+    \hline
+    248 & 11111000 & F8 \\
+    \hline
+    252 & 11111100 & FC \\
+    \hline
+    254 & 11111110 & FE \\
+    \hline
+    255 & 11111111 & FF \\
+    \hline
+    \end{tabular}
+    \caption{Conversion de nombres décimaux en binaire et hexadécimal}
+    \label{tab:conversion}
+\end{table}
 
 
-\subsection{Héxadécimal utile en réseau}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Plage d'adresses & Description & Utilisation \\
+    \hline
+    0.0.0.0/8 & Actuelle réseau & Utilisé pour les broadcasts \\
+    \hline
+    10.0.0.0/8 & Privée & Utilisée dans les réseaux locaux \\
+    \hline
+    127.0.0.0/8 & Boucle locale & Pour les communications sur l'hôte local \\
+    \hline
+    169.254.0.0/16 & Lien local & Utilisée pour l'auto-configuration d'adresse \\
+    \hline
+    172.16.0.0/12 & Privée & Utilisée dans les réseaux locaux \\
+    \hline
+    192.0.0.0/24 & IETF Protocol Assignments & Réservée pour IETF Protocol Assignments \\
+    \hline
+    192.168.0.0/16 & Privée & Utilisée dans les réseaux locaux \\
+    \hline
+    198.18.0.0/15 & Test de performance & Utilisée pour des benchmarks \\
+    \hline
+    224.0.0.0/4 & Multicast & Réservée pour les adresses multicast \\
+    \hline
+    240.0.0.0/4 & Réservée & Réservée pour une utilisation future \\
+    \hline
+    255.255.255.255 & Broadcast & Adresse de broadcast limitée \\
+    \hline
+    \end{tabular}
+    \caption{Quelques adresses IP et plages réservées et leurs utilisations}
+    \label{tab:ip_reserved}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Préfixe CIDR & Masque de Sous-Réseau & Nombre d'Adresses IP \\
+    \hline
+    /32 & 255.255.255.255 & 1 \\
+    \hline
+    /31 & 255.255.255.254 & 2 \\
+    \hline
+    /30 & 255.255.255.252 & 4 \\
+    \hline
+    /29 & 255.255.255.248 & 8 \\
+    \hline
+    /28 & 255.255.255.240 & 16 \\
+    \hline
+    /27 & 255.255.255.224 & 32 \\
+    \hline
+    /26 & 255.255.255.192 & 64 \\
+    \hline
+    /25 & 255.255.255.128 & 128 \\
+    \hline
+    /24 & 255.255.255.0 & 256 \\
+    \hline
+    /23 & 255.255.254.0 & 512 \\
+    \hline
+    /22 & 255.255.252.0 & 1,024 \\
+    \hline
+    /21 & 255.255.248.0 & 2,048 \\
+    \hline
+    /20 & 255.255.240.0 & 4,096 \\
+    \hline
+    /19 & 255.255.224.0 & 8,192 \\
+    \hline
+    /18 & 255.255.192.0 & 16,384 \\
+    \hline
+    /17 & 255.255.128.0 & 32,768 \\
+    \hline
+    /16 & 255.255.0.0 & 65,536 \\
+    \hline
+    \end{tabular}
+    \caption{Préfixes CIDR, masques de sous-réseau correspondants et nombre d'adresses IP}
+    \label{tab:cidr}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    Port & Protocole & Nom & Description \\
+    \hline
+    20 & TCP & FTP Data & Transfert de données FTP \\
+    \hline
+    21 & TCP & FTP Command & Commandes FTP \\
+    \hline
+    22 & TCP & SSH & Shell sécurisé \\
+    \hline
+    23 & TCP & Telnet & Connexion Telnet \\
+    \hline
+    25 & TCP & SMTP & Mail Transfer Agent (envoi de mails) \\
+    \hline
+    53 & UDP & DNS & Système de noms de domaine \\
+    \hline
+    80 & TCP & HTTP & Transfert hypertexte \\
+    \hline
+    110 & TCP & POP3 & Réception de mails \\
+    \hline
+    119 & TCP & NNTP & Réseau de transfert de nouvelles réseau \\
+    \hline
+    123 & UDP & NTP & Protocole de temps réseau \\
+    \hline
+    143 & TCP & IMAP & Accès aux messages Internet \\
+    \hline
+    443 & TCP & HTTPS & HTTP sur TLS/SSL \\
+    \hline
+    465 & TCP & SMTPS & SMTP sur TLS/SSL \\
+    \hline
+    587 & TCP & SMTP & Mail Submission Agent (soumission de mails) \\
+    \hline
+    993 & TCP & IMAPS & IMAP sur TLS/SSL \\
+    \hline
+    995 & TCP & POP3S & POP3 sur TLS/SSL \\
+    \hline
+    \end{tabular}
+    \caption{Quelques ports communs et leurs utilisations}
+    \label{tab:ports}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Numéro & Nom & Description \\
+    \hline
+    1 & ICMP & Internet Control Message Protocol \\
+    \hline
+    2 & IGMP & Internet Group Management Protocol \\
+    \hline
+    6 & TCP & Transmission Control Protocol \\
+    \hline
+    17 & UDP & User Datagram Protocol \\
+    \hline
+    41 & IPv6 & IPv6 encapsulation \\
+    \hline
+    47 & GRE & Generic Routing Encapsulation \\
+    \hline
+    50 & ESP & Encapsulating Security Payload \\
+    \hline
+    51 & AH & Authentication Header \\
+    \hline
+    88 & EIGRP & Enhanced Interior Gateway Routing Protocol \\
+    \hline
+    89 & OSPF & Open Shortest Path First \\
+    \hline
+    \end{tabular}
+    \caption{Tableau de correspondance entre numéros de protocole et noms}
+    \label{tab:protocol_numbers}
+\end{table}
 
 
 \section{Adressage IPV4}
@@ -352,3 +666,4 @@
 
 
 \end{document}
+
